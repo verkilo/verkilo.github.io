@@ -1,0 +1,13 @@
+article {
+  margin-top: 60px;
+    h1 {
+      margin-top: 10%;
+      font-size: 2rem;
+      font-family: var(--font-heading);
+    }
+    p {
+      &+p {
+        margin-top: 1em;
+      }
+    }
+}

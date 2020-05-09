@@ -1,0 +1,32 @@
+---
+---
+@import 'reset';
+@import 'color'; 
+@import 'home'; 
+@import 'navbar';
+@import 'page';
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  width: 100%;
+  height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+  font-size: 17px;
+  main {
+    flex: 1;
+  }
+  footer {
+    width: 100%;
+    background: var(--footer-background);
+    padding: 0.5em 0;
+  }
+}
+h1, h2 {
+  font-family: var(--font-heading);
+}
+

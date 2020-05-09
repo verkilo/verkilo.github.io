@@ -1,0 +1,42 @@
+@import 'contrast';
+
+$system-fonts: -apple-system,BlinkMacSystemFont,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+
+$primary: hsl(228.28, 34.66, 50.78);
+$secondary: hsl(121.4, 34.7, 50.8);
+$accent: hsl(215.2, 34.7, 50.8);
+
+$black: hsl(228.28,12,10);
+$grey-700: hsl(228.28,12,30);
+$grey-500: hsl(228.28,12,50);
+$grey-300: hsl(228.28,12,70);
+$white: hsl(228.28,6,99);
+
+$background: $white;
+$dark-background: $grey-700;
+
+:root {
+  --font-heading: Oswald,#{$system-fonts};
+  --font-monospace: 'Fira Sans',Consolas,'Liberation Mono',Menlo,monospace;
+  --font-sans: "Source Sans Pro",#{$system-fonts};
+  --font-serif: "Source Serif Pro",#{$system-fonts};
+  --font-system: #{$system-fonts};
+  --primary: #{contrast($primary, $background, 1)};
+  --secondary: #{contrast($secondary, $background, 1)};
+  --accent: #{contrast($accent, $background, 1)};
+  --background: #{$background};
+  --foreground: #{contrast($grey-500, $background,7)};
+  --navtext: #{$white};
+  --navbackground: #{$primary};
+  --white: #{$white};
+  --jumbotron-bg: #{$primary};
+  --jumbotron-fg: #{contrast(#888,$primary,7)};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #{contrast($primary, $dark-background, 1.0)};
+    --background: #{$dark-background};
+    --foreground: #{contrast($grey-500, $dark-background,7)};
+  }
+}

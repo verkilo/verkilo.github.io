@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>{The HTML5 Herald}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro|Fira+Sans">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">VERKILO</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/posts">News</a>
+    </nav>
+  </header>
+  {{content}}
+  <footer>
+    Copyright
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

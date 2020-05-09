@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<main class='home'>
+    {% include jumbotron.html src="https://via.placeholder.com/300" heading="Sustainable Self-Publishing"
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    %}
+
+  <div class="features">
+  {% for f in page.features %}
+      {% include feature.html f=f  %}
+  {% endfor %}
+  </div>
+  <div class="systems">
+
+    <div>
+      <i class='fab fa-microsoft'></i>
+      Windows
+    </div>
+    <div>
+      <i class='fab fa-apple'></i>
+      OSX
+    </div>
+    <div>
+      <i class='fab fa-linux'></i>
+      Linux
+    </div>
+
+    <p>Tired of buggy software with all the best features for only one operating system?</p>
+
+    <p>Verkilo lets you use the same code base on all major operating systems and platforms. If it works on Mac, it will work on Windows.</p>
+
+    <p>Stop waiting impatiently while other authors & editors get the latest and greatest features because they are on the company's prefered OS.</p>
+  </div>
+</main>
