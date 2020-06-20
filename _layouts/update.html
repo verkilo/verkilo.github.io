@@ -1,11 +1,32 @@
 ---
-layout: page
+layout: default
 ---
+<main class='updates flex'>
+  <article>
+    {% if page.release %}
+      {% assign update = page %}
+      {% assign content = page.content %}
+    {%else%}
+      {% assign update = site.updates.last %}
+      {% assign content = update.content %}
+    {% endif %}
+    <h1>{{update.release}} (version {{update.version}})</h1>
+    <p>
+      <strong>Update {{update.version}}</strong>:
+      The update addresses these
+      <a href="https://github.com/verkilo/verkilo/issues?q=is%3Aissue+milestone%3A%22{{update.milestone}}%22+is%3Aclosed">issues</a>.
+    </p>
+    <p>Welcome to the {{update.release}} release of Verkilo.</p>
 
-{% include update-intro.html %}
-
-**Update 0.1:** The update addresses these [issues][issues].
-
-Welcome to the June 2020 release of Verkilo.
-
-[issues]: https://github.com/verkilo/verkilo/issues?q=is%3Aissue+milestone%3A%22June+2020%22+is%3Aclosed
+    {{content}}
+  </article>
+  <aside>
+    <h2>Updates</h2>
+    {% assign updates = site.updates | reverse %}
+    <ul>{% for update in updates %}
+      <li>
+        <a href="{{update.url}}">{{ update.release }}</a>
+      </li>
+    {% endfor %}</ul>
+  </aside>
+</main>

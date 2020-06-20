@@ -33,8 +33,15 @@ collections:
     # permalink: /faq/:name
     output: true
   updates:
-    # permalink: /faq/:name
+    permalink: /updates/:name
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "updates"
+    values:
+      layout: "update"
 # Build settings
 markdown: kramdown
 # theme: minima
