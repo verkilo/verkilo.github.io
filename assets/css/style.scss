@@ -1,15 +1,50 @@
 ---
 ---
-@import 'reset';
-@import 'color'; 
-@import 'home'; 
+
+$picnic-grid-sizes: 600 900;
+$picnic-grid-count: one two three;
+$picnic-grid-count-sizes: (
+  three: 33.33333%,
+  two: 50%,
+);
+$picnic-grid-part: full third two-third;
+$picnic-grid-part-sizes: (
+  full: 100%,
+  third: 33.33333%,
+  half: 50%,
+  two-third: 66.66666%,
+);
+$picnic-grid-offpart: none third two-third;
+$picnic-grid-offpart-sizes: (
+  third: 33.33333%,
+  two-third: 66.66666%,
+  half: 50%,
+  none: 0
+);
+@import 'picnic';
+// @import 'reset';
+@import 'color';
+@import 'home';
 @import 'navbar';
 @import 'page';
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+  body {
+    font-weight: 450;
+  }
+}
 html, body {
   background: var(--background);
   color: var(--foreground);
   width: 100%;
   height: 100vh;
+}
+strong {
+  font-weight: bold;
+  color: var(--strong);
 }
 body {
   display: flex;
@@ -22,11 +57,35 @@ body {
   }
   footer {
     width: 100%;
-    background: var(--footer-background);
+    font-size: 0.85rem;
+    background: var(--cardbackground);
+    display: flex;
+    justify-content: space-around;
     padding: 0.5em 0;
+    a {
+      color: var(--cardprimary);
+      text-decoration: none;
+      &:hover {
+        color: var(--cardforeground);
+        text-decoration: underline;
+      }
+    }
   }
 }
-h1, h2 {
+h1, h2, h3 {
   font-family: var(--font-heading);
 }
-
+.lost {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 35em;
+  h1 {
+    font-size: 4rem !important;
+    border-right: 0.1rem solid var(--foreground);
+    padding-right: 1rem;
+    margin-right: 1rem !important;
+    line-height: 1;
+  }
+}

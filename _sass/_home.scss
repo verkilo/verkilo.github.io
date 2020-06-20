@@ -17,16 +17,21 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     flex-basis: 20%;
-    margin: 2em 5%;
+    margin: 2em 1%;
     min-width: 20em;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(#777, 0.2);
+    color: var(--cardforeground);
+    background: var(--cardbackground);
+    i {
+      color: var(--cardprimary);
+    }
     h3 {
       font-size: 1.8rem;
       text-transform: uppercase;
     }
-  }  
+  }
 }
 .systems {
   display: flex;
@@ -57,7 +62,7 @@
   background-image: url(/assets/images/3px-tile.png);
   color: var(--jumbotron-fg);
   min-height: 85vh;
-  
+
   img {
     flex-basis: 20%;
   }

@@ -26,11 +26,15 @@ github_username:  jekyll
 
 collections:
   - faqs
+  - updates
 
 collections:
   faqs:
+    # permalink: /faq/:name
     output: true
-
+  updates:
+    # permalink: /faq/:name
+    output: true
 # Build settings
 markdown: kramdown
 # theme: minima

@@ -1,19 +1,20 @@
 @import 'contrast';
 
-$system-fonts: -apple-system,BlinkMacSystemFont,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+$system-fonts: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", Arial,"Noto Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// 228
+$primary: hsl(247, 30, 40);
+$secondary: hsl(214, 34.7, 50.8);
+$accent: hsl(220, 34.7, 50.8);
 
-$primary: hsl(228.28, 34.66, 50.78);
-$secondary: hsl(121.4, 34.7, 50.8);
-$accent: hsl(215.2, 34.7, 50.8);
-
-$black: hsl(228.28,12,10);
-$grey-700: hsl(228.28,12,30);
-$grey-500: hsl(228.28,12,50);
-$grey-300: hsl(228.28,12,70);
-$white: hsl(228.28,6,99);
+$black: hsl(247,12,10);
+$grey-800: hsl(247,12,20);
+$grey-700: hsl(247,12,30);
+$grey-500: hsl(247,12,50);
+$grey-300: hsl(247,12,70);
+$white: hsl(247,6,99);
 
 $background: $white;
-$dark-background: $grey-700;
+$dark-background: $grey-800;
 
 :root {
   --font-heading: Oswald,#{$system-fonts};
@@ -27,16 +28,25 @@ $dark-background: $grey-700;
   --background: #{$background};
   --foreground: #{contrast($grey-500, $background,7)};
   --navtext: #{$white};
-  --navbackground: #{$primary};
+  --navbar-background: #{$primary};
   --white: #{$white};
   --jumbotron-bg: #{$primary};
   --jumbotron-fg: #{contrast(#888,$primary,7)};
+  --href: #{contrast($primary, $background, 4.0)};
+  --cardprimary: #{contrast($primary, darken($background,10%),4)};
+  --cardbackground: #{darken($background,10%)};
+  --cardforeground: #{contrast(#808080, darken($background,10%),7)};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #{contrast($primary, $dark-background, 1.0)};
+    --href: #{contrast($primary, $dark-background, 4.0)};
     --background: #{$dark-background};
-    --foreground: #{contrast($grey-500, $dark-background,7)};
+    --cardprimary: #{contrast($primary, darken($dark-background,10%),4)};
+    --cardbackground: #{darken($dark-background,10%)};
+    --cardforeground: #{contrast(#808080, darken($dark-background,10%),7)};
+    --foreground: #{contrast(#888, $dark-background,7)};
+    --strong: #{contrast($secondary, $dark-background,5)};
   }
 }

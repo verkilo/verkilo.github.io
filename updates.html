@@ -1,0 +1,11 @@
+---
+layout: page
+title: Updates
+permalink: /updates
+---
+
+{% for update in site.updates %}
+  <h2>{{update.release}} (version {{update.version}})</h2>
+  {% include update-intro.html %}
+  {{ update.content | markdownify }}
+{% endfor %}

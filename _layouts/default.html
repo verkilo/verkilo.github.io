@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>{The HTML5 Herald}</title>
+  <title>{{site.title}} | {{page.title}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
@@ -15,17 +15,35 @@
 
 <body>
   <header class="navbar">
-    <div class="logo">VERKILO</div>
     <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/posts">News</a>
+    <a class="brand" href="/">VERKILO</a>
+    <!-- responsive-->
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">&#8801;<span class='sr-only'>menu</span></label>
+        <div class="menu">
+          <a class='pseudo' id='home-link' href="/"></i>Home</a>
+          <a class='pseudo' href="{{ '/docs' | relative_url }}">Docs</a>
+          <a class='pseudo' href="{{ '/updates' | relative_url }}">Updates</a>
+          <a class='pseudo' href="{{ '/posts' | relative_url }}">News</a>
+          <a class='pseudo' href="{{ '/faq' | relative_url }}">FAQ</a>
+        </div>
     </nav>
   </header>
   {{content}}
   <footer>
-    Copyright
+    <div>
+      Hello from Virginia.
+    </div>
+    <div>
+      <a href="/privacy">Privacy</a>
+    </div>
+    <div>
+      <a href="/permissions ">Terms of Use</a>
+    </div>
+    <div>
+      &copy; 2020 Ben Wilson
+    </div>
   </footer>
-  <script src="js/scripts.js"></script>
+  <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
 </body>
 </html>

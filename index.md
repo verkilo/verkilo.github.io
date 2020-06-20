@@ -4,18 +4,18 @@
 
 layout: home
 features:
-  - 
+  -
     icon: far fa-shipping-fast
     heading: Distribution Ready
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    
-  - 
+    text: Your manuscript is always ready for upload to Amazon or other distribution site
+
+  -
     icon: far fa-laptop
     heading: Cross-Platform
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    
-  - 
+    text: Use your favorite editor to work on your manuscript anytime, anywhere
+
+  -
     icon: fab fa-markdown
     heading: Sustainable
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    text: Writing in Markdown ensures your manuscript stands the test of time
 ---

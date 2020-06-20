@@ -1,0 +1,14 @@
+---
+layout: page
+title: Frequently Asked Questions
+permalink: /faq
+---
+
+<p>Our docs contain a Common questions section as needed for specific topics. We've captured items here that don't fit in the other topics.</p>
+
+<p>If you don't see an answer to your question here, check our previously reported issues on GitHub and our release notes</p>
+
+{% for faq in site.faqs %}
+  <h2>{{ faq.question }}</h2>
+  {{ faq.content | markdownify }}
+{% endfor %}
