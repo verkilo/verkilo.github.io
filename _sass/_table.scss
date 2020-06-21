@@ -1,0 +1,19 @@
+table {
+  margin: 1em auto;
+  th,td {
+    padding: 0.4rem 1rem;
+  }
+  th {
+    background: var(--primary);
+    color: var(--white);
+  }
+  tr:nth-child(even) {
+    background: rgba(#808080, .2);
+  }
+}
+.text-center {
+  text-align: center;
+}
+tr.uk {
+  border: 1px solid #C66;
+}

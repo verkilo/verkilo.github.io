@@ -1,4 +1,4 @@
-main.updates {
+main.contents {
   padding-top: 4em;
   max-width: 900px;
   display: flex;
@@ -15,6 +15,7 @@ main.updates {
       text-transform: uppercase;
     }
     ul {
+      font-family: var(--system-font);
       list-style: none;
       padding: 0;
     }

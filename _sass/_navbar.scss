@@ -1,6 +1,7 @@
 header.navbar {
   nav {
     background: var(--navbar-background);
+    background-image: url(/assets/images/3px-tile.png);
     color: var(--white);
     .show {
       color: var(--black);
