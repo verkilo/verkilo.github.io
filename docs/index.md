@@ -9,3 +9,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 * Setup
 * Tricks & Tips
+* [Trim sizes](/docs/trimsize)
+* [Fonts](/docs/fonts)
