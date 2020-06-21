@@ -36,6 +36,7 @@ $dark-background: $grey-800;
   --cardprimary: #{contrast($primary, darken($background,10%),4)};
   --cardbackground: #{darken($background,10%)};
   --cardforeground: #{contrast(#808080, darken($background,10%),7)};
+  --code-fg: #{contrast(#777, darken($background,10%),4)};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,5 +49,6 @@ $dark-background: $grey-800;
     --cardforeground: #{contrast(#808080, darken($dark-background,10%),7)};
     --foreground: #{contrast(#888, $dark-background,7)};
     --strong: #{contrast($secondary, $dark-background,5)};
+    --code-fg: #{$black};
   }
 }
