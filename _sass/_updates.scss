@@ -1,0 +1,29 @@
+main.contents {
+  padding-top: 4em;
+  max-width: 900px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row-reverse;
+  aside {
+    font-size: 0.9rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+    margin: 1em;
+    h2 {
+      font-size: 1.0rem;
+      font-family: var(--system-font);
+      text-transform: uppercase;
+    }
+    ul {
+      font-family: var(--system-font);
+      list-style: none;
+      padding: 0;
+    }
+  }
+  article {
+    margin: 1em;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: calc(50% - 1rem);
+  }
+}

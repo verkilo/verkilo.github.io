@@ -1,7 +1,7 @@
 ---
 title: Fonts
-layout: page
-permalink: /docs/fonts
+# layout: page
+# permalink: /docs/fonts
 ---
 
 <!-- fonts -->
