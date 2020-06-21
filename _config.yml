@@ -25,11 +25,11 @@ collections:
     permalink: /docs/:name
     output: true
     order:
-      - _docs/overview.md
-      - _docs/setup.md
-      - _docs/trimsize.md
-      - _docs/font.md
-      - _docs/bibliography.md
+      - overview.md
+      - setup.md
+      - trimsize.md
+      - font.md
+      - bibliography.md
 
 defaults:
   - scope:
