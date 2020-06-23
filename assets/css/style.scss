@@ -57,6 +57,9 @@ body {
   main {
     flex: 1;
   }
+  code {
+    color: var(--code-fg);
+  }
   footer {
     width: 100%;
     font-size: 0.85rem;
