@@ -2,20 +2,20 @@
 
 $system-fonts: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", Arial,"Noto Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 // 228
-$primary: hsl(247, 30, 40);
-$secondary: hsl(214, 34.7, 50.8);
-$accent: hsl(220, 34.7, 50.8);
+$primary:   hsl(247, 30, 40);
+$secondary: hsl(214, 35, 50);
+$accent:    hsl(220, 35, 50);
 
-$black: hsl(247,12,10);
-$grey-800: hsl(247,12,20);
-$grey-700: hsl(247,12,30);
-$grey-500: hsl(247,12,50);
-$grey-300: hsl(247,12,70);
-$white: hsl(247,6,99);
+$black:    hsl(247,10,10);
+$grey-800: hsl(247,10,20);
+$grey-700: hsl(247,10,30);
+$grey-500: hsl(247,10,50);
+$grey-300: hsl(247,10,70);
+$white:    hsl(247,6,99);
 
 $background: $white;
 $dark-background: $grey-800;
-
+$middle: #888;
 :root {
   --font-heading: Oswald,#{$system-fonts};
   --font-monospace: 'Fira Sans',Consolas,'Liberation Mono',Menlo,monospace;
@@ -31,12 +31,12 @@ $dark-background: $grey-800;
   --navbar-background: #{$primary};
   --white: #{$white};
   --jumbotron-bg: #{$primary};
-  --jumbotron-fg: #{contrast(#888,$primary,7)};
+  --jumbotron-fg: #{contrast($middle,$primary,7)};
   --href: #{contrast($secondary, $background, 4.0)};
   --cardprimary: #{contrast($primary, darken($background,10%),4)};
   --cardbackground: #{darken($background,10%)};
-  --cardforeground: #{contrast(#808080, darken($background,10%),7)};
-  --code-fg: #{contrast(#777, darken($background,10%),4)};
+  --cardforeground: #{contrast($middle, darken($background,10%),7)};
+  --code-fg: #{contrast($middle, darken($background,10%),4)};
   --href: #{contrast($secondary, $background, 5)};
 }
 
@@ -47,10 +47,10 @@ $dark-background: $grey-800;
     --background: #{$dark-background};
     --cardprimary: #{contrast($primary, darken($dark-background,10%),4)};
     --cardbackground: #{darken($dark-background,10%)};
-    --cardforeground: #{contrast(#808080, darken($dark-background,10%),7)};
-    --foreground: #{contrast(#888, $dark-background,7)};
+    --cardforeground: #{contrast($middle, darken($dark-background,10%),7)};
+    --foreground: #{contrast($middle, $dark-background,7)};
     --strong: #{contrast($secondary, $dark-background,5)};
     --code-bg: #{$black};
-    --code-fg: #{contrast(#888, $dark-background,7)};
+    --code-fg: #{contrast($middle, $dark-background,7)};
   }
 }
