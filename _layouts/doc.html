@@ -7,10 +7,24 @@ layout: default
     {{content}}
   </article>
   <aside>
+    <h2>Contents</h2>
     <ul>{% for doc in site.docs %}
       <li>
         <a href="{{doc.url}}">{{ doc.title }}</a>
       </li>
     {% endfor %}</ul>
+    {% if page.settings %}
+    <h2>Settings</h2>
+
+    {% assign sorted = site.data.settings | sort %}
+    <ul>{% for setting in sorted %}
+      {% assign t = setting | first %}
+      {% assign settings = setting | last | sort: 'name' %}
+      <li>{{t|replace: '-',' '|upcase}}</li>
+      <ul>{% for s in settings %}
+        <li><a href='#{{s.name}}'>{{s.name|replace: '-',' '| capitalize}}</a></li>
+      {% endfor %}</ul>
+      {% endfor %}</ul>
+    {% endif %}
   </aside>
 </main>

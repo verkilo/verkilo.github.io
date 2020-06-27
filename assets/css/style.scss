@@ -39,6 +39,7 @@ $picnic-grid-offpart-sizes: (
   }
 }
 html, body {
+  scroll-behavior: smooth;
   background: var(--background);
   color: var(--foreground);
   width: 100%;

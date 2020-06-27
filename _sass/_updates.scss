@@ -9,21 +9,26 @@ main.contents {
     flex-basis: 10rem;
     flex-grow: 1;
     margin: 1em;
-    h2 {
+    h2,h3 {
       font-size: 1.0rem;
       font-family: var(--system-font);
+    }
+    h2 {
       text-transform: uppercase;
     }
     ul {
       font-family: var(--system-font);
       list-style: none;
       padding: 0;
+      ul {
+        padding-left: 1em;
+      }
     }
   }
   article {
     margin: 1em;
     flex-basis: 0;
     flex-grow: 999;
-    min-width: calc(50% - 1rem);
+    min-width: 700px;
   }
 }

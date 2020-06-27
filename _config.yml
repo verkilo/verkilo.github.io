@@ -9,14 +9,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# collections:
-#   - faqs
-#   - updates
-#   - docs
-
 collections:
   faqs:
-    # permalink: /faq/:name
     output: true
   updates:
     permalink: /updates/:name
