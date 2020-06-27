@@ -32,23 +32,25 @@ $dark-background: $grey-800;
   --white: #{$white};
   --jumbotron-bg: #{$primary};
   --jumbotron-fg: #{contrast(#888,$primary,7)};
-  --href: #{contrast($primary, $background, 4.0)};
+  --href: #{contrast($secondary, $background, 4.0)};
   --cardprimary: #{contrast($primary, darken($background,10%),4)};
   --cardbackground: #{darken($background,10%)};
   --cardforeground: #{contrast(#808080, darken($background,10%),7)};
   --code-fg: #{contrast(#777, darken($background,10%),4)};
+  --href: #{contrast($secondary, $background, 5)};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #{contrast($primary, $dark-background, 1.0)};
-    --href: #{contrast($primary, $dark-background, 4.0)};
+    --href: #{contrast($secondary, $dark-background, 4.0)};
     --background: #{$dark-background};
     --cardprimary: #{contrast($primary, darken($dark-background,10%),4)};
     --cardbackground: #{darken($dark-background,10%)};
     --cardforeground: #{contrast(#808080, darken($dark-background,10%),7)};
     --foreground: #{contrast(#888, $dark-background,7)};
     --strong: #{contrast($secondary, $dark-background,5)};
-    --code-fg: #{$black};
+    --code-bg: #{$black};
+    --code-fg: #{contrast(#888, $dark-background,7)};
   }
 }

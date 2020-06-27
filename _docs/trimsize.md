@@ -6,7 +6,7 @@ title: Trim Sizes
 
 Due to the range of physical book form factors, the PDF compilation includes a `trimzize` option. The Word document has a fixed trim size (Letter, 1″ margins) to support editor collaboration. The ePUB and HTML lack trim sizes.
 
-When calculating trim size, we filtered commonly used against those offered by [KDP][KDP]. The resulting set of trim sizes are listed below. Metric measures rounded to 2 digits in the table. All measures are in metric in the LaTeX macros. Since [US Customary Measures][measure] are defined by their Metric equivalent, the PDF trim size is defined in metric.
+When calculating trim size, we filtered commonly used trim sizes against those offered by [KDP][KDP]. The resulting set of trim sizes are listed below. Metric measures rounded to 2 digits in the table. All measures are in metric in the LaTeX macros. Since [US Customary Measures][measure] are defined by their Metric equivalent, the PDF trim size is defined in metric.
 
 [KDP]: https://kdp.amazon.com/en_US#trim
 [measure]: https://en.wikipedia.org/wiki/United_States_customary_units#:~:text=For%20measuring%20length%2C%20the%20U.S.,for%20some%20applications%20in%20surveying.

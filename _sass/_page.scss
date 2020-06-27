@@ -1,4 +1,7 @@
 main {
+  a {
+    color: var(--href);
+  }
   h1,h2,h3 {
     line-height: 1.5;
   }
@@ -13,6 +16,10 @@ main {
     font-size: 1.8rem;
   }
   article {
+    div.highlight, div.highlight pre, div.highlight code, code {
+      background: var(--code-bg);
+      color: var(--code-fg);
+    }
     a {
       text-decoration: underline;
     }
