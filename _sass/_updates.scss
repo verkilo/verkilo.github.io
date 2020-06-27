@@ -1,14 +1,15 @@
 main.contents {
   padding-top: 4em;
-  max-width: 900px;
+  max-width: 1000px;
+  width: 100%;
   display: flex;
-  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-between;
   flex-direction: row-reverse;
   aside {
     font-size: 0.9rem;
-    flex-basis: 10rem;
-    flex-grow: 1;
-    margin: 1em;
+    flex: 1 0 25%;
+    padding: 1em;
     h2,h3 {
       font-size: 1.0rem;
       font-family: var(--system-font);
@@ -26,9 +27,9 @@ main.contents {
     }
   }
   article {
-    margin: 1em;
-    flex-basis: 0;
-    flex-grow: 999;
-    min-width: 700px;
+    padding: 1em;
+    flex: 3 0 75%;
+    width: 100%;
+    min-width: 500px;
   }
 }
