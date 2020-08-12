@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Verkilo | Fonts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro|Fira+Sans">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="navbar">
+    <nav>
+    <a class="brand" href="/">VERKILO</a>
+    <!-- responsive-->
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">&#8801;<span class='sr-only'>menu</span></label>
+        <div class="menu">
+          <a class='pseudo' id='home-link' href="/"></i>Home</a>
+          <a class='pseudo' href="/docs">Docs</a>
+          <a class='pseudo' href="/updates">Updates</a>
+          <a class='pseudo' href="/posts">News</a>
+          <a class='pseudo' href="/faq">FAQ</a>
+        </div>
+    </nav>
+  </header>
+  <main class='contents'>
+  <article>
+    <h1>Fonts</h1>
+    <!-- fonts -->
+
+<p>Verkilo configures three default fonts, but you may reconfigure them provided they are available when using the LaTeX font packages listed here. See <a href="https://pandoc.org/MANUAL.html#fonts">Pandoc fonts for LaTeX</a> for more information.</p>
+
+<p>Fonts are configured in either the <code class="language-plaintext highlighter-rouge">metadata.yml</code> or the in-document Frontmatter.</p>
+
+<p>The LaTeX packages used for font assignments are:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Family</th>
+      <th style="text-align: center">Default</th>
+      <th style="text-align: left">Attribute</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Serif</td>
+      <td style="text-align: center">Libre Baskerville</td>
+      <td style="text-align: left">seriffont: Libre Baskerville</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Sans-Serif</td>
+      <td style="text-align: center">Libre Franklin</td>
+      <td style="text-align: left">sansfont: Libre Franklin</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Monospace</td>
+      <td style="text-align: center">Inconsolata</td>
+      <td style="text-align: left">monofont: Inconsolata</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Why default Baskerville, Franklin &amp; Inconsolata?</strong> Both Libre Baskerville and Libre Franklin have been optimized for use on screen. Baskerville is nice and readable, so ideal for use as body text, while Franklin is better suited to headlines. Inconsolata pairs with Baskerville &amp; Franklin as they all share similar traits (double-story g &amp; a, etc.). See the <a href="./images/libre-franklin-baskerville-inconsolata.png">Libre Baskerville / Franklin / Inconsolata pairing image</a>.</p>
+
+<p>Here is an example of customizing fonts based on the Source Pro series:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>seriffont: "Source Serif Pro"
+sansfont: "Source Sans Pro"
+monofont: "Source Code Pro"
+</code></pre></div></div>
+<!-- /fonts -->
+
+<!-- fonts-available -->
+<h3 id="fonts-available">Fonts Available</h3>
+
+<p>The fonts available for use are listed below. Submit an <a href="https://github.com/Merovex/verkilo-pandoc-book/issues">issue</a> if you would like other fonts added.</p>
+
+<ul>
+  <li>Source Code Pro</li>
+  <li>Source Serif Pro</li>
+  <li>Inconsolata</li>
+  <li>Oswald</li>
+  <li>Libre Franklin</li>
+  <li>Source Sans Pro</li>
+  <li>Libre Baskerville</li>
+</ul>
+
+<!-- /fonts-available -->
+
+  </article>
+  <aside>
+    <h2>Contents</h2>
+    <ul>
+      <li>
+        <a href="/docs/trimsize">Trim Sizes</a>
+      </li>
+    
+      <li>
+        <a href="/docs">Getting Started</a>
+      </li>
+    
+      <li>
+        <a href="/docs/01-setup">Setup</a>
+      </li>
+    
+      <li>
+        <a href="/docs/copyright">Copyright</a>
+      </li>
+    
+      <li>
+        <a href="/docs/fonts">Fonts</a>
+      </li>
+    
+      <li>
+        <a href="/docs/settings">Settings</a>
+      </li>
+    </ul>
+    
+  </aside>
+</main>
+
+  <footer>
+    <div>
+      Hello from Virginia.
+    </div>
+    <div>
+      <a href="/privacy">Privacy</a>
+    </div>
+    <div>
+      <a href="/permissions ">Terms of Use</a>
+    </div>
+    <div>
+      &copy; 2020 Ben Wilson
+    </div>
+  </footer>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

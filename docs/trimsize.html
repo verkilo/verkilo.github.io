@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Verkilo | Trim Sizes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro|Fira+Sans">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="navbar">
+    <nav>
+    <a class="brand" href="/">VERKILO</a>
+    <!-- responsive-->
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">&#8801;<span class='sr-only'>menu</span></label>
+        <div class="menu">
+          <a class='pseudo' id='home-link' href="/"></i>Home</a>
+          <a class='pseudo' href="/docs">Docs</a>
+          <a class='pseudo' href="/updates">Updates</a>
+          <a class='pseudo' href="/posts">News</a>
+          <a class='pseudo' href="/faq">FAQ</a>
+        </div>
+    </nav>
+  </header>
+  <main class='contents'>
+  <article>
+    <h1>Trim Sizes</h1>
+    <!-- trimsize -->
+<!-- ### Trimsize -->
+
+<p>Due to the range of physical book form factors, the PDF compilation includes a <code class="language-plaintext highlighter-rouge">trimzize</code> option. The Word document has a fixed trim size (Letter, 1″ margins) to support editor collaboration. The ePUB and HTML lack trim sizes.</p>
+
+<p>When calculating trim size, we filtered commonly used trim sizes against those offered by <a href="https://kdp.amazon.com/en_US#trim">KDP</a>. The resulting set of trim sizes are listed below. Metric measures rounded to 2 digits in the table. All measures are in metric in the LaTeX macros. Since <a href="https://en.wikipedia.org/wiki/United_States_customary_units#:~:text=For%20measuring%20length%2C%20the%20U.S.,for%20some%20applications%20in%20surveying.">US Customary Measures</a> are defined by their Metric equivalent, the PDF trim size is defined in metric.</p>
+
+<table class="text-center">
+<thead>
+  <tr>
+  <th>Trim Size</th>
+  <th>Setting</th>
+  <th>Region</th>
+  <th colspan="2">Paper Size</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Novella</td>
+    <td><code>Novella</code></td>
+    <td>US</td>
+    <td>5″&nbsp;×&nbsp;8″</td>
+    <td>12.7&nbsp;×&nbsp;20.32&nbsp;cm</td>
+  </tr>
+  <tr class="uk">
+    <td>UK B Format</td>
+    <td><code>B-Format</code></td>
+    <td>UK</td>
+    <td>5.06″&nbsp;×&nbsp;7.81″</td>
+    <td>12.85&nbsp;×&nbsp;19.84&nbsp;cm</td>
+  </tr>
+  <tr>
+    <td>Small Trade</td>
+    <td><code>SmallTrade</code></td>
+    <td>US</td>
+    <td>5.25″&nbsp;×&nbsp;8″</td>
+    <td>13.34&nbsp;×&nbsp;20.32&nbsp;cm</td>
+  </tr>
+  <tr>
+    <td>Digest</td>
+    <td><code>Digest</code></td>
+    <td>US</td>
+    <td>5.5″&nbsp;×&nbsp;8.5″</td>
+    <td>13.97&nbsp;×&nbsp;21.59&nbsp;cm</td>
+  </tr>
+  <tr>
+    <td>Trade</td>
+    <td><code>Trade</code></td>
+    <td>US</td>
+    <td>6″&nbsp;×&nbsp;9″</td>
+    <td>15.24&nbsp;×&nbsp;22.86&nbsp;cm</td>
+  </tr>
+  <tr class="uk">
+    <td>Royal</td>
+    <td><code>Royal</code></td>
+    <td>UK</td>
+    <td>6.14″&nbsp;×&nbsp;9.21″</td>
+    <td>15.6&nbsp;×&nbsp;23.39&nbsp;cm</td>
+  </tr>
+  <tr>
+    <td>Textbook</td>
+    <td><code>Textbook</code></td>
+    <td>US</td>
+    <td>7″&nbsp;×&nbsp;10″</td>
+    <td>17.78&nbsp;×&nbsp;25.4&nbsp;cm</td>
+  </tr>
+  <tr class="uk">
+    <td>Crown</td>
+    <td><code>Crown</code></td>
+    <td>UK</td>
+    <td>7.44″&nbsp;×&nbsp;9.69″</td>
+    <td>18.9&nbsp;×&nbsp;24.61&nbsp;cm</td>
+  </tr>
+  <tr>
+    <td>Large Trade</td>
+    <td><code>LargeTrade</code></td>
+    <td>US</td>
+    <td>8″&nbsp;×&nbsp;10″</td>
+    <td>20.32&nbsp;×&nbsp;25.4&nbsp;cm</td>
+  </tr>
+  <tr>
+    <td>Square</td>
+    <td><code>Square</code></td>
+    <td>US</td>
+    <td>8.5″&nbsp;×&nbsp;8.5″</td>
+    <td>21.59&nbsp;×&nbsp;21.59&nbsp;cm</td>
+  </tr>
+  <tr>
+    <td>Letter</td>
+    <td><code>Letter</code></td>
+    <td>US</td>
+    <td>8.5″&nbsp;×&nbsp;11″</td>
+    <td>21.59&nbsp;×&nbsp;27.94&nbsp;cm</td>
+  </tr>
+  <tr class="uk">
+    <td>A4</td>
+    <td><code>A4</code></td>
+    <td>UK</td>
+    <td>8.27″&nbsp;×&nbsp;11.69″</td>
+    <td>21&nbsp;×&nbsp;29.7&nbsp;cm</td>
+  </tr>
+</tbody>
+</table>
+<!-- |    | 6.69"&nbsp;×&nbsp;9.61"         | 16.99&nbsp;×&nbsp;24.41&nbsp;cm | -->
+<!-- |    | 7.5"&nbsp;×&nbsp;9.25"          | 19.05&nbsp;×&nbsp;23.5&nbsp;cm | -->
+<!-- |    | 8.25"&nbsp;×&nbsp;6"          | 20.96&nbsp;×&nbsp;15.24&nbsp;cm | -->
+<!-- |    | 8.25"&nbsp;×&nbsp;8.25"         | 20.96&nbsp;×&nbsp;20.96&nbsp;cm | -->
+
+<ul>
+  <li>Top and Inner margins are 2cm (~3/4″).</li>
+  <li>Outer and bottom margins are 17mm (~5/8″).</li>
+  <li>Gutter margin is added to the Inner margin based on estimated page count. This complies with KDP’s standard.</li>
+  <li>When attribute <code class="language-plaintext highlighter-rouge">bleed: true</code> is set, then the paper size and margins are increased by 3mm wide and 6mm high. (I don’t think we can bleed an image, though.)</li>
+  <li>Set attribute <code class="language-plaintext highlighter-rouge">crop: true</code> to see what a given size looks like scaled properly on a letter-sized printout.</li>
+</ul>
+
+<p><strong>Warning:</strong> Failure to use one of the listed trim sizes will cause the compilation to fail. Defaults to <code class="language-plaintext highlighter-rouge">trimsize: Trade</code>.
+<!-- /trimsize --></p>
+
+  </article>
+  <aside>
+    <h2>Contents</h2>
+    <ul>
+      <li>
+        <a href="/docs/trimsize">Trim Sizes</a>
+      </li>
+    
+      <li>
+        <a href="/docs">Getting Started</a>
+      </li>
+    
+      <li>
+        <a href="/docs/01-setup">Setup</a>
+      </li>
+    
+      <li>
+        <a href="/docs/copyright">Copyright</a>
+      </li>
+    
+      <li>
+        <a href="/docs/fonts">Fonts</a>
+      </li>
+    
+      <li>
+        <a href="/docs/settings">Settings</a>
+      </li>
+    </ul>
+    
+  </aside>
+</main>
+
+  <footer>
+    <div>
+      Hello from Virginia.
+    </div>
+    <div>
+      <a href="/privacy">Privacy</a>
+    </div>
+    <div>
+      <a href="/permissions ">Terms of Use</a>
+    </div>
+    <div>
+      &copy; 2020 Ben Wilson
+    </div>
+  </footer>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
